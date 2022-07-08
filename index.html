@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="de">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>dhv xc flight hours</title>
+  <script type=module src="calc_flighthours.js"></script>
+</head>
+
+<body>
+  <header>
+    <h1>Total flight hours for selected year and pilot</h1>
+  </header>
+
+  <label for="year">Choose year:</label>
+  <select name="year" id="year">
+    <option value="2022">2022</option>
+    <option value="2021">2021</option>
+    <option value="2020">2020</option>
+  </select><br><br>
+  
+  <label for="pilotId">Pilot Id:</label>
+  <input type="text" id="pilotId" name="pilotId"><br><br>
+  <button type="button" id="submitData">Submit</button><br><br>
+  
+  <label for="hours">Flight hours:</label><br>
+  <textarea id="hours" name="hours" rows="1" cols="50"></textarea>
+
+  <footer>
+    <p>© 2022 by simsum</p>
+  </footer>
+</body>
+
+</html>
